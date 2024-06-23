@@ -48,6 +48,7 @@ $db = new order();
 							<th>Tgl Pesan</th>
 							<th>Tgl Tour</th>
 							<th>ID Pesan </th>
+							<th>Sertifikat </th>
 							<th>Nama</th>
 							<th>Paket</th>
 							<th>Penginapan</th>
@@ -75,7 +76,7 @@ $db = new order();
 											echo $x['tgl_tour'];
 										} ?></td>
 									<td><?php echo $x['id_pesan']; ?></td>
-
+									<td><img class="img-rounded" src="../foto/<?php echo $x['sertifikat']; ?>" alt=""></td>
 									<td><?php echo $x['nama_user']; ?></td>
 									<td><?php echo $x['nama_paket']; ?></td>
 									<td><?php echo $x['hotel']; ?></td>
@@ -98,9 +99,10 @@ $db = new order();
 					</tbody>
 					<tfoot>
 						<tr>
-							<th>ID Pesan </th>
-							<th>Tgl Pesan</th>
+							<th>Igl Pesan </th>
 							<th>Tgl Tour</th>
+							<th>ID Pesan</th>
+							<th>Sertifikat </th>
 							<th>Nama</th>
 							<th>Paket</th>
 							<th>Penginapan</th>

@@ -89,12 +89,18 @@
 								<div class="desc2 animate-box">
 									<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
 
-										<h2 align="center">Sangihe Dive Center</h2>
-										<h3>Alamat: Pelabuhan Tua, Sawang Bendar,
-											Kec. Tahuna, Kabupaten Kepulauan Sangihe,
-											Sulawesi Utara 95812</h3>
-										<h3>Telpon: 085319180989</h3>
-										<h3>Email : enjoy@gmail.com</h3>
+										<h2 align="center">Sangihe Dive Center </h2>
+										<h3>
+											<element class="icon-location3" :before> : Pelabuhan Tua, Sawang Bendar,
+												Kec. Tahuna, Kabupaten Kepulauan Sangihe,
+												Sulawesi Utara 95812
+										</h3>
+										<h3>
+											<element class="icon-old-phone" :before>: 085319180989
+										</h3>
+										<h3>
+											<element class="icon-mail3" :before> : Sangihedc@gmail.com
+										</h3>
 
 										<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
 									</div>

@@ -2,17 +2,17 @@
 	<div class="container">
 		<div class="nav-header">
 			<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-			<img src="images/SANGIHE.jpg" width="350" height="70" />
+			<img src="images/SANGIHE.jpg" width="150" height="70" />
 			<!-- START #fh5co-menu-wrap -->
 			<nav id="fh5co-menu-wrap" role="navigation">
 				<ul class="sf-menu" id="fh5co-primary-menu">
 					<li><a href="index.php">Home</a></li>
 					<li>
-						<a href="paket.php" class="fh5co-sub-ddown">Paket Wisata</a>
+						<a href="paket.php" class="fh5co-sub-ddown">Tour Package </a>
 
 					</li>
 					<li>
-						<a href="guide.php" class="fh5co-sub-ddown">Profil Guide</a>
+						<a href="guide.php" class="fh5co-sub-ddown">Diver </a>
 
 					</li>
 

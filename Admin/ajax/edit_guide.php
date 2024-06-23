@@ -30,12 +30,29 @@ $db = new guide();
               </ul>
             </div>
             <div class="col-md-6">
+              <h3 class="section-title">Sertifikat</h3>
+              <p><img src="../images/<?php echo $d['sertifikat'] ?>" width='250x' height='250px' /></p>
+              <ul class="contact-info">
+
+
+              </ul>
+            </div>
+
+            <div class="col-md-6">
               <label>Ganti Gambar </label>
               <div class="form-group">
                 <input type="hidden" name="id" value="<?php echo $d['id'] ?>" class="form-control" readonly>
                 <input type="file" class="form-control" name="gambar">
               </div>
             </div>
+            <div class="col-md-6">
+              <label>Ganti Gambar </label>
+              <div class="form-group">
+                <input type="hidden" name="id" value="<?php echo $d['id'] ?>" class="form-control" readonly>
+                <input type="file" class="form-control" name="sertifikat">
+              </div>
+            </div>
+
             <div class="col-md-6">
               <label>Nama Guide</label>
               <div class="form-group">

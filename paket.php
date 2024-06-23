@@ -135,7 +135,7 @@ $db = new paket();
 						if ($db->tampil_data() != null) {
 							foreach ($db->tampil_data() as $x) {
 						?>
-								<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+								<div class="col-md-5 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
 									<div href="#"><img src="images/jon3.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
 										<div class="desc">
 											<span></span>

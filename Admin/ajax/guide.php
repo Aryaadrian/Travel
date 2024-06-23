@@ -56,6 +56,7 @@ $db = new guide();
 								<th>Nama</th>
 								<th>Keterangan</th>
 								<th>Gambar</th>
+								<th>Sertifikat</th>
 								<th>Opsi</th>
 
 							</tr>
@@ -75,6 +76,7 @@ $db = new guide();
 										<td><?php echo $x['nama']; ?></td>
 										<td><?php echo $x['konten']; ?></td>
 										<td><img class="img-rounded" src="../images/<?php echo $x['gambar']; ?>" alt=""></td>
+										<td><img class="img-rounded" src="../images/<?php echo $x['sertifikat']; ?>" alt=""></td>
 
 
 										<td>
@@ -103,6 +105,7 @@ $db = new guide();
 								<th>Wisata</th>
 								<th>Keterangan</th>
 								<th>Gambar</th>
+								<th>Sertifikat</th>
 								<th>Opsi</th>
 							</tr>
 						</tfoot>

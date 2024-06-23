@@ -100,7 +100,7 @@
 								<div class="span5">
 									<legend>Upload Bukti Pembayaran</legend>
 									</p><br />
-									<p>Upload bukti bahwa anda telah melakukan pembayaran. Bukti yang diupload hanya berupa gambar (jpg, png, gif).</p>
+									<p>Upload bukti bahwa anda telah melakukan pembayaran. Bukti yang diupload hanya berupa gambar (Max 900kb jpg, png, gif).</p>
 									<form action="proses_upload.php?aksi=input" method="post" enctype="multipart/form-data">
 										<div class="input-control text" data-role="input-control">
 											<p> <input type="hidden" name="id_pesan" value="<?php echo $_GET['id'];  ?>">

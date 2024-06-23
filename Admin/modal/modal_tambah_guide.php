@@ -30,13 +30,19 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label>Gambar</label>
-                <input type="file" class="form-control" name="gambar">
+                <input type="file" class="form-control" name="gambar" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Sertifikat</label>
+                <input type="file" class="form-control" name="sertifikat" required>
               </div>
             </div>
             <div class="col-md-6">
               <label>Nama Guide</label>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nama" name="nama">
+                <input type="text" class="form-control" placeholder="Nama" name="nama" required>
               </div>
             </div>
 

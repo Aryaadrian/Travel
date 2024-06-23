@@ -97,10 +97,16 @@ class user extends database
 			echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
 		}
 	}
-	public function order($id_user, $id_paket, $id_hotel, $tgl_pesan, $tgl_tour)
+	public function order($id_user, $id_paket, $sertifikat, $id_hotel, $tgl_pesan, $tgl_tour)
 	{
+		$db = new database();
+		$sql = "INSERT INTO `tbl_pesan`( `id_user`, `sertifikat`,`id_paket`, `id_hotel`,  `tgl_pesan`, `tgl_tour`)
+		values('$id_user','$sertifikat','$id_paket', '$id_hotel',NOW(),'$tgl_tour')";
 
-		$sql = "INSERT INTO `tbl_pesan` (`id_pesan`, `id_user`, `id_paket`, `id_hotel`, `id_daerah`, `tgl_pesan`, `tgl_tour`) VALUES (NULL, '$id_user','$id_paket','$id_hotel','$id_daerah','$tgl_pesan','$tgl_tour')";
+
+		move_uploaded_file($_FILES['sertifikat']['tmp_name'], "foto/" . $_FILES['sertifikat']['name']);
 		$result = mysqli_query($this->getConnection(), $sql);
+		echo $sql;
+		echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
 	}
 }

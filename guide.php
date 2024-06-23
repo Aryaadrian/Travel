@@ -43,6 +43,7 @@ $db = new guide();
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
+
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Superfish -->
@@ -98,7 +99,7 @@ $db = new guide();
 
 
 										<span class="price">
-											<center>Meyelam Ditemani Guide Lokal Yang Berlisensi</center>
+											<center>Meyelam bersama guide lokal dan teman-teman diver </center>
 										</span>
 										<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
 									</div>
@@ -114,7 +115,7 @@ $db = new guide();
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-							<h3>Perjalanan wisata bawah laut ditemani Guide lokal </h3>
+							<h3>Perjalanan wisata bawah laut ditemani Guide Profesional dan teman-teman diver yang berlisensi </h3>
 							<p>Hanya di Sangihe Dive Center</p>
 						</div>
 					</div>
@@ -124,7 +125,7 @@ $db = new guide();
 					if ($db->tampil_data() != null) {
 						foreach ($db->tampil_data() as $x) {
 					?>
-							<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="col-lg-3 col-md-4 col-sm-6">
 								<div class="fh5co-blog animate-box">
 									<a href="#"><img class="img-responsive" src="images/<?php echo $x['gambar']; ?>" alt=""></a>
 									<div class="blog-text">

@@ -5,7 +5,7 @@ class database
 
 	public $_host = "localhost";
 	public $_username = "root";
-	public $_password = "";
+	public $_password = "root";
 	public $_database = "travel";
 	public $_connection;
 

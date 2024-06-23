@@ -112,8 +112,8 @@ $db = new guide();
 							<div class="col-md-6 animate-box">
 								<?php echo $d['konten'] ?>
 							</div>
-							<div class="col-md-6 animate-box">
-								<img class="img-responsive" src="images/<?php echo $d['gambar']; ?>" alt="travel">
+							<div class="col-md-4 animate-box">
+								<img class="img-responsive" src="images/<?php echo $d['sertifikat']; ?>" alt="travel">
 							</div>
 						</div>
 					</div>

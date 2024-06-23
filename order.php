@@ -15,7 +15,7 @@ $pw = new combo();
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ENJOY TRAVEL</title>
+	<title>Sangihe Dive Center</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -136,6 +136,7 @@ $pw = new combo();
 							<div class="col-md-6">
 								<h3 class="section-title">Ketentuan Pembookingan</h3>
 								<ul class="section-title">
+									<li>Wajib memiliki sertifikat dive minimal openwater.</li>
 									<li>Perubahan Peket dan Penginapan silahkan hubungi contact person kami
 										yang ada pada website, dan hanya bisa dilakukan 5 hari sebelum hari
 										keberangkatan tour. Kurang dari itu perubahan tidak bisa dilakukan.</li>
@@ -158,10 +159,18 @@ $pw = new combo();
 										</div>
 									</div>
 									<div class="col-md-6">
+										<div class="form-group">
+											<label>Sertifikat</label>
+
+											<input type="file" class="form-control" name="sertifikat" required>
+											<p>(Max 900kb jpg, png, gif).</p>
+										</div>
+									</div>
+									<div class="col-md-6">
 										<label>Pilih Paket Wisata</label>
 										<div class="form-group">
 											<select name="id_paket" class="form-control">
-												<option value="">--Pilih Paket Wisata-</option>
+												<option value="required">--Pilih Paket Wisata-</option>
 												<?php
 												$a = 1;
 												foreach ($pw->tampil_paket() as $x) : $a++ ?>

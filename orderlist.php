@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>enjoy travel</title>
+	<title>Sangihe Dive Center</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -87,8 +87,8 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 							<h3>Order List</h3>
-							<h2>Pembayaran Melalui Rek BRI An : ENJOY TRAVEL</h2>
-							<h2>No Rek : 123456789</h2>
+							<h2>Pembayaran Melalui Rek BRI An : ....</h2>
+							<h2>No Rek : .......</h2>
 							<p>Lengkapi Form Berikut</p>
 						</div>
 					</div>
@@ -107,6 +107,7 @@
 												<th class="text-left">Tanggal Tour</th>
 												<th class="text-left">Paket Tour</th>
 												<th class="text-left">Tempat Penginapan</th>
+												<th class="text-left">Sertifikat</th>
 												<th class="text-left">Harga Paket</th>
 												<th class="text-left">Harga Penginapan</th>
 												<th class="text-left">Harga Total</th>
@@ -118,7 +119,7 @@
 											<?php
 
 											$id_user = $_SESSION['id_user'];
-											$_mysqli = new mysqli("localhost", "root", "", "travel");
+											$_mysqli = new mysqli("localhost", "root", "root", "travel");
 											$comot = $_mysqli->query("select *from tbl_pesan,tbl_user,tbl_paket,tbl_hotel where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_pesan.id_hotel=tbl_hotel.id_hotel and tbl_user.id_user='$id_user'");
 
 											while ($isi_tbl = mysqli_fetch_array($comot)) {
@@ -135,6 +136,7 @@
 													<td><?php echo $isi_tbl['tgl_tour']; ?></td>
 													<td><?php echo $isi_tbl['nama_paket']; ?></td>
 													<td><?php echo $isi_tbl['hotel']; ?></td>
+													<td><img src="foto/<?php echo $isi_tbl['sertifikat']; ?>" width="350" height="70"></td>
 													<td><?php echo $isi_tbl['harga_paket']; ?> IDR</td>
 													<td><?php echo $isi_tbl['harga']; ?> IDR</td>
 													<td><?php echo $total_harga; ?> IDR</td>

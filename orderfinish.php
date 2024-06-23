@@ -5,7 +5,7 @@ if (isset($_SESSION['id_user'])) {
 
     //koneksi terpusat
 
-    $_mysqli = new mysqli("localhost", "root", "", "travel");
+    $_mysqli = new mysqli("localhost", "root", "root", "travel");
 
     // get the HTML
     ob_start();
@@ -45,26 +45,27 @@ if (isset($_SESSION['id_user'])) {
         }
         -->
     </style>
-    <page format="105x200" orientation="L" backcolor=" #800000 " style="font: arial;">
+    <page format="105x200" orientation="L" backcolor=" #6AA6D6 " style="font: arial;">
         <div style="rotate: 90; position: absolute; width: 100mm; height: 4mm; left: 195mm; top: 0; font-style: italic; font-weight: normal; text-align: center; font-size: 2.5mm;">
 
         </div>
-        <table style="width: 99%;border: none;" cellspacing="4mm" cellpadding="0">
+        <table style="width: 99%;border: none;" cellspacing=4mm" cellpadding="0">
             <tr>
                 <td colspan="2" style="width: 100%">
-                    <div class="zone" style="height: 34mm;position: relative;font-size: 5mm;">
-                        <div style="position: absolute; right: 3mm; top: 3mm; text-align: right; font-size: 4mm; ">
+                    <div class="zone" style="height: 34mm;position: relative;font-size:5mm;">
+                        <div style="position: absolute; right: 3mm; top: 3mm; text-align: right; font-size:4mm; ">
                             <b><?php echo $nom; ?></b><br>
                         </div>
-                        <div style="position: absolute; right: 3mm; bottom: 3mm; text-align: right; font-size: 4mm; ">
+                        <div style="position: absolute; right: 3mm; bottom: 3mm; text-align: right;  font-size: 4mm; ">
                             Jenis Paket : <b><?php echo $isi_tbl['nama_paket']; ?></b><br>
+                            Jenis Paket : <b><?php echo $isi_tbl['hotel']; ?></b><br>
                             Total Biaya : <b><?php echo $total_harga; ?> IDR</b><br>
                             Code Booking : <b><?php echo $num; ?></b><br>
                             Tanggal Tour : <b><?php echo $isi_tbl['tgl_tour']; ?></b><br>
                         </div>
                         <img src="images/logo sangihe.jpg" width="100" height="99" />
-                        <span style="position: absolute; left: 32mm; top: 10mm; font-size: 28px; color: red">SANGIHE DIVECENTER </span><br />
-                        <span style="position: absolute; left: 32mm; top: 18mm; font-size: 16px;">Tiket Perjalananan, <?php echo $date; ?></span>
+                        <span style="position: absolute; left: 32mm; top: 3mm; font-size: 28px; color: red">SANGIHE DIVECENTER </span><br />
+                        <span style="position: absolute; left: 32mm; top: 11mm; font-style: italic; font-size: 16px;">Tiket Dive Trip, <?php echo $date; ?></span>
 
                     </div>
                 </td>

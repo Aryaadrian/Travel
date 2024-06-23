@@ -14,7 +14,7 @@ class penginapan extends database
 
 	function tampil_data()
 	{
-		$sql = "SELECT * FROM tbl_hotel";
+		$sql = "SELECT * FROM tbl_hotel WHERE id_hotel > 0";
 		$result = mysqli_query($this->getConnection(), $sql);
 		$hasil = null;
 		$baris = mysqli_num_rows($result);

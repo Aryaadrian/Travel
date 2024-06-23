@@ -29,13 +29,14 @@ class guide extends database
 		return $hasil;
 	}
 
-	function input($nama, $konten, $gambar)
+	function input($nama, $konten, $gambar, $sertifikat)
 	{
 
-		$sql = "insert into guide ( `nama`, `konten`, `gambar`) values('$nama','$konten','$gambar')";
+		$sql = "insert into guide ( `nama`, `konten`, `gambar` , `sertifikat`) values('$nama','$konten','$gambar','$sertifikat')";
 		$result = mysqli_query($this->getConnection(), $sql);
 
 		move_uploaded_file($_FILES['gambar']['tmp_name'], "../images/" . $_FILES['gambar']['name']);
+		move_uploaded_file($_FILES['gambar']['tmp_name'], "../images/" . $_FILES['sertifikat']['name']);
 
 		echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
 	}
@@ -64,11 +65,15 @@ class guide extends database
 
 
 
-	function update($id, $nama, $konten, $gambar)
+	function update($id, $nama, $konten, $gambar, $sertifikat)
 	{
 
 
 		if (empty($gambar)) {
+			$sql = "UPDATE guide SET   nama='$nama', konten='$konten' WHERE id='$id'";
+			$result = mysqli_query($this->getConnection(), $sql);
+		}
+		if (empty($sertifikat)) {
 			$sql = "UPDATE guide SET   nama='$nama', konten='$konten' WHERE id='$id'";
 			$result = mysqli_query($this->getConnection(), $sql);
 		}
@@ -78,6 +83,14 @@ class guide extends database
 			$result = mysqli_query($this->getConnection(), $sql);
 
 			move_uploaded_file($_FILES['gambar']['tmp_name'], "../images/" . $_FILES['gambar']['name']);
+
+			echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
+		}
+		if (!empty($sertifikat)) {
+			$sql = "UPDATE guide SET nama='$nama', konten='$konten',sertifikat='$sertifikat' WHERE id='$id'";
+			$result = mysqli_query($this->getConnection(), $sql);
+
+			move_uploaded_file($_FILES['sertifikat']['tmp_name'], "../images/" . $_FILES['sertifikat']['name']);
 
 			echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
 		}
