@@ -64,7 +64,7 @@ if (isset($_SESSION['id_user'])) {
                             Tanggal Tour : <b><?php echo $isi_tbl['tgl_tour']; ?></b><br>
                         </div>
                         <img src="images/logo sangihe.jpg" width="100" height="99" />
-                        <span style="position: absolute; left: 32mm; top: 3mm; font-size: 28px; color: red">SANGIHE DIVECENTER </span><br />
+                        <span style="position: absolute; left: 32mm; top: 3mm; font-size: 28px; color: blue">SANGIHE DIVECENTER </span><br />
                         <span style="position: absolute; left: 32mm; top: 11mm; font-style: italic; font-size: 16px;">Tiket Dive Trip, <?php echo $date; ?></span>
 
                     </div>

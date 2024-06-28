@@ -90,7 +90,7 @@
 									<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
 
 										<h2 align="center">Sangihe Dive Center </h2>
-										<h3>
+										<h3 style="color: white">
 											<element class="icon-location3" :before> : Pelabuhan Tua, Sawang Bendar,
 												Kec. Tahuna, Kabupaten Kepulauan Sangihe,
 												Sulawesi Utara 95812
@@ -104,9 +104,7 @@
 
 										<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
 									</div>
-									<div class="row">
-										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1109.138500958603!2d125.4904673233493!3d3.6088003302961815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328b0be6293bed07%3A0xf282323c5ff00bed!2sSangihe%20Dive%20Center!5e1!3m2!1sid!2sid!4v1716353779877!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-									</div>
+
 								</div>
 							</div>
 						</div>
